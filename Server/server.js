@@ -23,7 +23,7 @@ import { student_route } from "./routes/student_route.js"
 let app = express()
 app.use(cors(
     {
-        origin: "https://classattend-mac-fm.onrender.com",
+        origin: "https://class-attendance-frontend.onrender.com",
      credentials: true,           
     methods: ["GET", "POST", "PUT", "DELETE","PATCH" ],
     allowedHeaders: ["Content-Type", "Authorization"]
