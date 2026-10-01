@@ -73,6 +73,16 @@ app.use("/student",auth_middleware,student_route)
 app.get("/",auth_middleware,(req,res)=>{
     return res.send("server is stared")
 })
+app.get("/check",(req,res)=>{
+    
+    try {
+        return res.send("check successfully")
+        
+    } catch (error) {
+        return res.send(error)
+    }
+})
+
 
 
 
